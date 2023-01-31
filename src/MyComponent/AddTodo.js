@@ -8,8 +8,6 @@ const AddTodo = (props) => {
     const [title, setTitle] = useState("")
     const [desc, setDesc] = useState("")
 
-
-
     const submit = (e) => {
         e.preventDefault();
         if (title === "" || desc === "") {
@@ -21,8 +19,6 @@ const AddTodo = (props) => {
 
         }
     }
-
-
     return (
         <>
             <div className='container my-3'>
@@ -38,7 +34,6 @@ const AddTodo = (props) => {
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
-
             </div>
             <hr />
         </>
